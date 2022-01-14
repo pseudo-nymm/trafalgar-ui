@@ -1,0 +1,59 @@
+@import "src/index.scss";
+
+.about-us-section {
+    position: relative;
+    margin: 11rem 0rem 12rem 0rem;
+    padding: 0px;
+
+    .bg-dots-1 {
+        @media screen and(max-width: 320px){
+            right: 0px;
+        }
+        
+        position: absolute;
+        z-index: -1;
+        height: 6.3rem;
+        top: 25rem;
+        right: -3rem;       
+    }
+
+    .row {
+        padding: 0rem 5rem 0rem 5.5rem;
+
+        .img-col {
+            padding: 0px;
+            @include flex-center;
+            
+            .illustration {
+               width: 95%;
+            }
+        }
+    
+        .text-col {        
+            @media screen and (max-width: 767px) {
+                padding-left: 0px;
+            }
+
+            padding: 3rem 0rem 0rem 4rem;
+
+            h4{
+                margin-bottom: 0.5em;
+                font-size: 2rem;
+                text-align: start;
+            }
+    
+            hr {
+                @include underline;
+            }
+        
+            p {
+                margin-top: 1em;
+                font-size: 1rem;
+            }
+    
+            .ghost-button {
+                margin-top: 2em;                
+            }
+        }
+    }
+}

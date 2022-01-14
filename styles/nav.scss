@@ -1,0 +1,138 @@
+@import "src/index.scss";
+
+nav {
+    top: 0;
+    padding: 4rem 0rem 3rem 9rem;
+    display: flex;
+    align-items: center;
+
+    //for smaller screens
+    @media screen and (max-width: 991px){
+        padding: 4rem 0rem 3rem 4rem;
+
+        .hamburger-button {
+            display: block;   
+        }
+
+        .collapsible {
+            display: none;
+        }  
+    }
+    
+    //for larger screens
+    @media screen and (min-width: 992px){
+        .hamburger-button {
+            display: none;   
+        }
+
+        .nav-list {
+            //overriding inline display set with js
+            display: none !important;
+        }
+
+        .collapsible {
+            display: block;
+        }
+    }
+
+    .logo {
+        position: absolute;
+        @include flex-center;
+        
+        .ellipse {
+            @include flex-center;
+            width: 1.6em;
+            height: 1.6em;
+            margin-right: 0.7em;
+            border-radius: 50vw;
+            background: $color-primary-3;
+            font-size: 1.4em;
+            font-weight: bold;
+    
+            a {  color: white; }
+        }
+    
+        .brand-name {
+            font-size: 1.3em;
+            font-weight: bold;
+
+            a {  color: #233348; }
+        }
+
+    }
+
+    //this menu collapses on smaller screens
+    .collapsible {
+        position: absolute;
+        right: 9rem;
+        top: 3.3rem;
+        font-size: 1rem;
+
+        a {
+            margin: 0.5em 0.8em;
+            color: $color-primary-1;         
+        } 
+    }
+
+    .hamburger-button {       
+        position: absolute;
+        top: 3rem;
+        background-color: rgba(255,255,255,0);
+        outline: none;
+        border: none;
+        color: $color-primary-2;
+        opacity: 0.5;
+
+        i {
+            font-size: 1.7rem;
+        }
+    }
+
+    .hamburger-button:hover, a:hover {
+        color: $color-primary-2;
+        opacity: 1;
+        font-weight: bold;
+    }
+    
+    //menu for smaller screens
+    .nav-menu {
+        display: none;
+        position: absolute; 
+        z-index: 1;
+        top: 6rem;
+        width: 11rem;
+        padding: 1em 0em;
+        box-shadow: 10px 15px 20px 5px  rgba(0,0,100,0.06);
+        border-radius: 0.5em; 
+        background-color: white;
+        list-style-type: none;
+        text-align: end;
+        font-size: 1rem;
+
+        a {  	
+            margin: 0.7em 2em;
+            color: $color-primary-1;  
+        }
+
+        a:hover {
+            color: $color-primary-2;
+        }
+        
+    }
+
+    @media screen and (max-width: $min-viewport-width){
+        .hamburger-button {
+            left: 280px;
+        }
+
+        .nav-list {
+            left: 170px;
+        } 
+    }
+
+    @media screen and (min-width: calc(#{$min-viewport-width} + 1px)){
+        .hamburger-button, .nav-list {
+            right: calc(3rem + 2.9vw);
+        }
+    }
+}
