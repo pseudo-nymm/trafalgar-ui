@@ -25,7 +25,7 @@ nav {
             display: none;   
         }
 
-        .nav-list {
+        .nav-menu {
             //overriding inline display set with js
             display: none !important;
         }
@@ -109,10 +109,11 @@ nav {
         text-align: end;
         font-size: 1rem;
 
-        a {  	
+         a {  	
+            display: block;
             margin: 0.7em 2em;
             color: $color-primary-1;  
-        }
+        } 
 
         a:hover {
             color: $color-primary-2;
@@ -125,13 +126,13 @@ nav {
             left: 280px;
         }
 
-        .nav-list {
+        .nav-menu {
             left: 170px;
         } 
     }
 
     @media screen and (min-width: calc(#{$min-viewport-width} + 1px)){
-        .hamburger-button, .nav-list {
+        .hamburger-button, .nav-menu {
             right: calc(3rem + 2.9vw);
         }
     }
