@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/trafalgar-ui/static/css/main.3d209caf.css",
-    "main.js": "/trafalgar-ui/static/js/main.261f5f39.js",
+    "main.js": "/trafalgar-ui/static/js/main.b1ab3944.js",
     "static/media/herbalmedicine.jpg": "/trafalgar-ui/static/media/herbalmedicine.268498d122964d1584d1.jpg",
     "static/media/customer3.jpg": "/trafalgar-ui/static/media/customer3.a3eb010b496f66425e0d.jpg",
     "static/media/customer4.jpg": "/trafalgar-ui/static/media/customer4.485dd32eb85c9fc94984.jpg",
@@ -25,10 +25,10 @@
     "static/media/bgBlob2.svg": "/trafalgar-ui/static/media/bgBlob2.ba44fdccc7eddd5fe3a0.svg",
     "static/media/rightArrow.svg": "/trafalgar-ui/static/media/rightArrow.98c1d8674a120014ef3b64dac0a6f31b.svg",
     "main.3d209caf.css.map": "/trafalgar-ui/static/css/main.3d209caf.css.map",
-    "main.261f5f39.js.map": "/trafalgar-ui/static/js/main.261f5f39.js.map"
+    "main.b1ab3944.js.map": "/trafalgar-ui/static/js/main.b1ab3944.js.map"
   },
   "entrypoints": [
     "static/css/main.3d209caf.css",
-    "static/js/main.261f5f39.js"
+    "static/js/main.b1ab3944.js"
   ]
 }
