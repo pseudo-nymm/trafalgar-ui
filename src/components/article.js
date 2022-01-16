@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 const Article =( { img, heading, text } )=>{
 
     //importing image
-    var imgSrc= require(`../assets/images/${ img }.jpg`).default;
+    var imgSrc= require(`../assets/images/${ img }.jpg`);
 
 
     return(

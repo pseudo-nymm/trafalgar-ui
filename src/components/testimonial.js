@@ -3,7 +3,7 @@ import { Row, Col } from "react-bootstrap";
 
 const Testimonial =({img, name, details, text})=>{
     //importing image
-    var imgSrc= require(`../assets/images/${img}.jpg`).default;
+    var imgSrc= require(`../assets/images/${img}.jpg`);
   
     return(
         <Row className="carousel-row fade" >
