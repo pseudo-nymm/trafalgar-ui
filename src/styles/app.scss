@@ -1,0 +1,28 @@
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Mulish");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;700&display=swap');
+
+//variables & mixins 
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+//reset
+@import 'core/reset';
+
+//components
+@import 'components/ghost-button';
+
+//layouts
+@import 'layouts/nav';
+@import 'layouts/header';
+@import 'layouts/servicesSection';
+@import 'layouts/aboutUsSection';
+@import 'layouts/appsSection';
+@import 'layouts/articlesSection';
+@import 'layouts/testimonialsSection';
+@import 'layouts/footer';
+
+
+
+

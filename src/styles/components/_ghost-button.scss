@@ -1,0 +1,15 @@
+.ghost-button {
+    width: 11.1em;
+    height: 3.3em;
+    padding: 0px;
+    border {
+        color: $color-primary-3;
+        width: 0.15em;
+    }
+
+    border-radius: 50vw;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    color:  $color-primary-3;
+}

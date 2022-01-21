@@ -24,6 +24,4 @@ const Service = ( {img, heading, description} )=> {
 
 export default Service;
 
-/* "overrides": {
-    "mini-css-extract-plugin": "2.4.5"
-  } */
+  

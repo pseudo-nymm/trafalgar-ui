@@ -1,0 +1,16 @@
+//for underlining headings
+@mixin underline {
+    min-height: 0.15em;
+    width: 3.1rem;
+    height: 0.15rem;
+    margin: 1.3em 0em;
+    background: rgb(0,0,0); 
+    opacity: 0.8;
+}
+
+//for centering elements using flex 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
